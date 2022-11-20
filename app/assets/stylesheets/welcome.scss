@@ -1,3 +1,86 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    color: white;
+}
+main{
+    height: 100%;
+}
+.mainBody{
+    justify-content: center;
+    display: flex;
+}
+.foguete{
+    position: relative;
+    top: -180px;
+    width: 80vh;
+    height: 80vh;
+}
+.name{
+    position: relative;
+    top: -340px;
+    z-index: 100;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+}
+footer{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footerBody{
+    position: absolute;
+    top: 560px;
+    background-color: #333333;
+    z-index: 100;
+    font-size: 2rem;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+.block1{
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    height: 360px;
+    border: 2px solid;
+}
+.block2{
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    height: 360px;
+    border: 2px solid;
+}
+.block3{
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    height: 360px;
+    border: 2px solid;
+}
+ p{
+    text-align: center;
+    font-size: 20px;
+}
+@media (max-height: 600px) {
+    .foguete{
+        top: -60px;
+        height: 80vh;
+    }
+    .name{
+        top: -200px;
+    }
+}

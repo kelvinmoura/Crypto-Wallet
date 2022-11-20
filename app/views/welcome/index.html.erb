@@ -1,9 +1,10 @@
-<h1>Bem Vindo!!!</h1>
-<label>Visitante</label>
-<p><strong>Data:</strong> <%= data_br(Date.today)%></p>
+<head>
+<title>Crypto Rocket</title>
+</head>
+<body>
+    <main style="display:flex; gap:3rem; margin-top: 300px; justify-content: center; font-size: 30px; font-weight: bold;">
+        <div align="center" ><%= link_to "Informações"%></div>
+        <div align="center" ><%= link_to "Sua Carteira", user_path %></div>
+    </main>
+</body>
 
-<ul>
-    <li>
-        <%= link_to "Cadastrar Moedas", coins_path %>
-    </li>
-</ul>
