@@ -20,19 +20,15 @@ pre {
 }
 
 a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  background-color: black;
-  border-radius: 20px;
-  font-family: sans-serif;
+  color: #000;
+
   &:visited {
-    color: white;
+    color: #666;
   }
 
   &:hover {
-    color: white;
-    background-color: grey;
+    color: #fff;
+    background-color: #000;
   }
 }
 

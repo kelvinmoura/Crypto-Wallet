@@ -1,5 +1,6 @@
 <header>
-<p style="position: relative; right: 0;"><%= link_to "Adicionar novas moedas", coins_path %></p>
+<div style="float: right; font-size: 20px;"><%= locale(I18n.locale)%></div>
+<p style="margin-left: 150px;"><%= link_to "Adicionar novas moedas", coins_path %></p>
     <div><%= image_tag "fogo", width: "200px", height: "200px" %></div>
     <h1 align="center" style="font-size: 50px; font-weight: bold;"><%= @titulo %></h1>
 </header>

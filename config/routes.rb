@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+  resources :mining_types
   root 'welcome#index'
   get '/user', to:'user#index'
   get '/inicio', to:'welcome#index'
