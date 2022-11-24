@@ -4,10 +4,10 @@
 <table align="center" style="background-color: green;">
   <thead>
     <tr>
-      <th>Moeda</th>
-      <th>Sigla</th>
-      <th>Imagem</th>
-      <th>Mining Type</th>
+      <th><%= @coins.human_attribute_name(:description)%></th>
+      <th><%= @coins.human_attribute_name(:acronym)%></th>
+      <th><%= @coins.human_attribute_name(:url_image)%></th>
+      <th><%= @coins.human_attribute_name(:mining_type)%></th>
       <th colspan="4"></th>
     </tr>
   </thead>
@@ -18,10 +18,10 @@
         <td><%= coin.description %></td>
         <td><%= coin.acronym %></td>
         <td><%= image_tag coin.url_image, width: 25, height: 25 %></td>
-        <td></td>
-        <td><%= link_to 'Mostrar', coin %></td>
-        <td><%= link_to 'Editar', edit_coin_path(coin) %></td>
-        <td><%= link_to 'Deletar', coin, method: :delete, data: { confirm: 'Tem certeza que seja apagar essa moeda?' } %></td>
+        <td><%= coin.mining_type.acronym %></td>
+        <td><%= link_to t("links.show"), coin %></td>
+        <td><%= link_to t("links.edit"), edit_coin_path(coin) %></td>
+        <td><%= link_to t("links.delete"), coin, method: :delete, data: { confirm: 'Tem certeza que seja apagar essa moeda?' } %></td>
       </tr>
     <% end %>
       <tr>

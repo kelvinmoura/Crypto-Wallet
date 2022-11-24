@@ -1,10 +1,10 @@
-<head>
-<title>Crypto Rocket</title>
-</head>
+
 <body>
+    <p><%= t("welcome")%></p>
+    <p style=""><%= link_to t("links.add_coin"), coins_path %></p>
     <main style="display:flex; gap:3rem; margin-top: 300px; justify-content: center; font-size: 30px; font-weight: bold;">
-        <div align="center" ><%= link_to "Informações"%></div>
-        <div align="center" ><%= link_to "Sua Carteira", user_path %></div>
+        <div align="center" ><%= link_to t("links.info")%></div>
+        <div align="center" ><%= link_to t("links.wallet"), user_path %></div>
     </main>
 </body>
 
