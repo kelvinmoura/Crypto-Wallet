@@ -1,10 +1,9 @@
-
-<body>
-    <p><%= t("welcome")%></p>
-    <p style=""><%= link_to t("links.add_coin"), coins_path %></p>
-    <main style="display:flex; gap:3rem; margin-top: 300px; justify-content: center; font-size: 30px; font-weight: bold;">
-        <div align="center" ><%= link_to t("links.info")%></div>
-        <div align="center" ><%= link_to t("links.wallet"), user_path %></div>
-    </main>
-</body>
-
+<div class="jumbotron">
+  <h1 class="display-4"><%= t("welcome")%></h1>
+  <p class="lead"><%= t("messages.welcome") %></p>
+  <hr class="my-4">
+  <p><%= t("messages.menu")%></p>
+  <%= link_to t("links.info"), inicio_path, class: "btn btn-primary btn-lg", role:"button" %>
+  <%= link_to t("links.add_coin"), coins_path, class: "btn btn-primary btn-lg", role:"button" %>
+  <%= link_to t("links.wallet"), user_path, class: "btn btn-primary btn-lg", role:"button" %>
+</div>

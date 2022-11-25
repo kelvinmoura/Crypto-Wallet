@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
-<h1 align="center">Moedas</h1>
+<h1 align="center"><%= Coin.model_name.human(count: @coins.count)%></h1>
 
-<table align="center" style="background-color: green;">
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= @coins.human_attribute_name(:description)%></th>
@@ -21,13 +21,13 @@
         <td><%= coin.mining_type.acronym %></td>
         <td><%= link_to t("links.show"), coin %></td>
         <td><%= link_to t("links.edit"), edit_coin_path(coin) %></td>
-        <td><%= link_to t("links.delete"), coin, method: :delete, data: { confirm: 'Tem certeza que seja apagar essa moeda?' } %></td>
+        <td><%= link_to t("links.delete"), coin, method: :delete, data: { confirm: t("messages.confirm") } %></td>
       </tr>
     <% end %>
       <tr>
-      <td><%= link_to 'Nova Moeda', new_coin_path %></td>
-      <td><%= link_to 'Tipos de mineração', mining_types_path %></td>
-      <td><%= link_to "Inicio", inicio_path %></td>
+      <td><%= link_to t('new.coin'), new_coin_path, class:"btn btn-primary" %></td>
+      <td><%= link_to t('showing.mining_type'), mining_types_path, class:"btn btn-primary" %></td>
+      <td><%= link_to t('links.back'), inicio_path, class:"btn btn-primary" %></td>
       </tr>
   </tbody>
 </table>
