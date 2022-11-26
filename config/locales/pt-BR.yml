@@ -2,7 +2,7 @@ pt-BR:
   current_locale: "Brasil"
   welcome: "Seja Bem-Vindo!"
   messages:
-    welcome: "Este é o Crypto Rocket Wallet, uma app para você cadastrar e acompanhar as suas criptomoedas."
+    welcome: "Essa é a Crypto Rocket Wallet, uma app para você cadastrar e acompanhar as suas criptomoedas."
     menu: "Para começar, selecione uma das opções abaixo:"
     confirm: "Tem certeza?"
     localization: "Localização: "
